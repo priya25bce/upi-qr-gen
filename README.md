@@ -55,7 +55,7 @@ python main.py
 
 - **UPI ID** must be in the format `user@provider`
 
-- **Name**: enter your full  name or just the name 
+- **Name**: enter your full  name or name can have letter ,digits and spaces only
 
 - **Amount**: integers or up to 2 decimals
 

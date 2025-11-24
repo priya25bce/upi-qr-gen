@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/e70ef600-c98b-4ff0-b61d-7d5f620147c0
 
 ## Features
 
-- Validates UPI IDs and rejects invalid ones  
+- Validates UPI ID and rejects the UPI ID if something is missing 
 - Works with all payment apps
 - Appends timestamp to the image file to avoid conflict
 - Simple and beginner-friendly
@@ -37,7 +37,7 @@ cd upi-qr-gen
 pip install -r requirements.txt
 ```
 
-> [!NOTE]
+> [NOTE]
 > Create a virtual environment if you're on linux before running the pip command. 
 
 ## Running the Program
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 python main.py
 ````
 
-> [!TIP]
+> [TIP]
 > Leave optional fields blank if you want to. (press return/enter) 
 
 ## Input Rules

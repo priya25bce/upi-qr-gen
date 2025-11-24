@@ -1,7 +1,7 @@
 ## Problem Statement
 
 In the era of technology where we people want to make our work easier or do in a short time we often 
-tend to write long UPI ID just for the payment . We in daily life uses online mode of payment
+tend to write  a long UPI ID just for the payment . We in daily life use online mode of payment
 but it gets tiring to write the long UPI ID and if written wrong it stops the transaction.
 
 So to solve this program I have designed this project just to help us. In this project 

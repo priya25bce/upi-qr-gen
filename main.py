@@ -17,10 +17,11 @@ def valid_upi(u):
     if user=="" or provider=="":
         return False
 
-    allowed_set= set("abcdefghijklmnopqrstuvwxyz0123456789.-_")
+    allowed= set("abcdefghijklmnopqrstuvwxyz0123456789.-_")
 
     for c in user:
-        if c not in allowed_set:
+        if c not in allowed:
+            
             return False
 
     for c in provider:
@@ -56,23 +57,23 @@ def valid_amount(a):
 
 # INPUT
 
-user_upi_id = input("Enter your UPI ID: ").strip().lower()
+upi_id = input("Enter your UPI ID: ").strip().lower()
 
-if not valid_upi(user_upi_id):
-    print("ERROR: Invalid UPI ID. Expected format: user@provider")
+if not valid_upi(upi_id):
+    print("ERROR: Invalid UPI ID.  \n Expected format: user@provider")
     raise SystemExit(1)
 
-user_name = input("Enter your Name: ").strip()
+name = input("Enter your Name: ").strip()
 
-if not valid_name(user_name):
-    print("ERROR: Invalid name. only letters, numbers, and spaces allowed.")
+if not valid_name(name):
+    print("ERROR: Invalid name.\n  only letters, numbers, and spaces allowed.")
     raise SystemExit(1)
 
 amount = input("Enter Amount (optional): ").strip()
 
 
 if not valid_amount(amount):
-    print("ERROR: Invalid amount. Example: 530.56 or 300")
+    print("ERROR: Invalid amount. \n Example: 300.56 or 300")
     raise SystemExit(1)
 
 message=input("Enter Message (optional): ").strip()
@@ -80,14 +81,14 @@ message=input("Enter Message (optional): ").strip()
 # URL CONSTRUCTION
 
 # some symbols are not allowed in url, so we have to encode it
-nameEnc= encode(user_name)
+nameEnc= encode(name)
 msgEnc= encode(message)
 
 
 
 
 # URL is of the format upi://pay?pa={upi_id}&pn={name_enc}&cu=INR&am={amount}&tn={message}
-url= f"upi://pay?pa={user_upi_id}&pn={nameEnc}&cu=INR"
+url= f"upi://pay?pa={upi_id}&pn={nameEnc}&cu=INR"
 if amount!="":
     url= url + '&am=' + amount # add amount if provided
 if message!="":
@@ -116,3 +117,4 @@ label.image= tk_img
 root.mainloop()
 
 # scan with your mobile phone
+

@@ -143,10 +143,13 @@ label.pack(pady=10)
 label.image= tk_img
 root.mainloop()
 
+
 # scan with your mobile phone
 # the payment is done 
 #good to go 
-#enjoy this application 
+#enjoy this program
+
+
 
 
 

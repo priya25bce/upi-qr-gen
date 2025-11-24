@@ -2,10 +2,7 @@
 
 This project generates UPI payment QR codes using a provided UPI ID, name, message and amount. It also includes a Tkinter GUI for displaying the generated QR code.
 
-
-https://github.com/user-attachments/assets/cf2750f6-1772-4408-a24c-07e4facca3a1
-
-
+https://github.com/user-attachments/assets/e70ef600-c98b-4ff0-b61d-7d5f620147c0
 
 
 
